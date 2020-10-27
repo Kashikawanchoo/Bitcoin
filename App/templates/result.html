@@ -51,23 +51,27 @@
             <div class="card-header">
                 <h1>Bitcoin Price Predictor</h1>
                 <small> Do you think it is impossible to predict Bitcoin prices?</small>
-                <small> The model has been trained till 18th Oct,2020. Please select a date after 18-10-2020.</small>
+                
             </div>
     
             <div class="card-body">
                 <form method="post" action="/api">
 
-                    <div class="form-group">
-                        <label>Enter Date</label>
-                        <input id="first" class="form-control" name="Year" placeholder="Enter Date" type="Date">
-                    </div> 
-                    
-                 
-                   <button id="sub" type="submit" class="btn btn-block btn-warning" >Check Price</button> 
+                   
                 </form>
             </div>
 
-            <h3 class="result">{{ data }}<h3>
+            <h3 class="result"> ${{ data }}<h3>
+
+             <div class="card-body" >
+                <small> Click on the link below to compare the predicted price!</small>
+                <p>
+                 <a href="https://www.coindesk.com/price/bitcoin"  class="btn btn-block btn-warning"> Compare now! </a>
+                 </p>     
+            </div>
+           
+
+
 
         </div>
     </div> 
